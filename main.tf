@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "yls3backend.sctp-sandbox.com"
+    bucket = "sctp-ce8-tfstate"
     key    = "yl-state.tfstate"
     region = "ap-southeast-1"
   }
