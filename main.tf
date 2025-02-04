@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "yls3backend.sctp-sandbox.com"
+    key    = "yl-state.tfstate"
+    region = "ap-southeast-1"
+  }
+}
+
 resource "aws_s3_bucket" "static_bucket" {
  bucket = "yls3.sctp-sandbox.com"
  force_destroy = true
