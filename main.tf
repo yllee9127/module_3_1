@@ -11,6 +11,7 @@ resource "aws_s3_bucket" "static_bucket" {
  force_destroy = true
 }
 
+/*
 resource "aws_s3_bucket_public_access_block" "enable_public_access" {
   bucket = aws_s3_bucket.static_bucket.id
 
@@ -34,3 +35,4 @@ resource "aws_s3_bucket_website_configuration" "website" {
   }
 
 }
+*/
